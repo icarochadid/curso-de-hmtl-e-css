@@ -1,3 +1,3 @@
 # curso
-Estou aprendendo GitHub, ebaaa. 
+Estou aprimorando meu conhecimento nas ferramentas no github.
  
