@@ -1,0 +1,19 @@
+@charset "UTF-8";
+*{
+    background-color: lightgreen; }
+h1{
+    color: rgb(7, 66, 7);} 
+h1#destaque{ 
+    background-color: rgb(42, 128, 42);
+    color: rgb(10, 53, 10);
+    text-align: center;
+    border-radius: 1em;} 
+.familia{
+    background-color: white; 
+    border-radius: 1em;} 
+.dois{
+    background-color: purple; 
+    border-radius: 1em;} 
+.quadrado{
+    background-color: rgb(42, 128, 42); 
+    border-radius: 1em;}
