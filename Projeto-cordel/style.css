@@ -2,6 +2,10 @@
 * {
     margin: 0%; padding: 0%;
 } 
+
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 html, body {
     background-color: darkgray;
     min-height: 100%vh;
@@ -10,11 +14,12 @@ header {
     background-color: black;
     color: white; 
     text-align: center;
+    
 } 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Passion One';
 } 
 header > p { 
     padding-bottom: 50px;
@@ -31,10 +36,12 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-family: Srisakdi, cursive;
     
 } 
 section > p {
     padding-left: 40px;
+    font-family: var(--fontepoema);
 } 
 .imagem > p {
     background-color: rgba(0, 0, 0, 0.384);
