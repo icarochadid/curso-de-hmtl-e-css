@@ -50,5 +50,53 @@
             <p><input type="time" name="hora" id="hora"></p>
         </form>
     </fieldset>
+
+    <fieldset>
+        <legend>CheckBox</legend>
+        <form action="cadastro.js" method="post">
+            <p><input type="checkbox" name="op1" id="idop1"> <label for="idop1">Opção 1</label></p>
+            <p><input type="checkbox" name="op2" id="idop2"><label for="idop2">Opção 2</label></p>
+            <p><input type="checkbox" name="op3" id="idop3"><label for="idop3">Opção 3</label></p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Radio e color</legend>
+        <form action="cadastro.js" method="post">
+            <p><input type="radio" name="opções" id="idop1">Opção 1</p>
+            <p><input type="radio" name="opções" id="idop2">Opção 2</p>
+            <p><input type="color" name="cor" id="idcor"><label for="idcor">Cor</label></p>
+            <p><input type="range" name="barra" id="idbarra"><label for="idbarra">Barra</label></p>
+            <p><label for="idenvarq">Enviar Arquivo</label> <input type="file" name="envarq" id="idenvarq"></p>
+            </form>
+    </fieldset>
+    <fieldset>
+        <legend>Estados do Brasil (alguns)</legend>
+        <form action="cadastro.js">
+            <p>
+                <label for="idest">Estados:</label> 
+                <select name="est" id="idest">~
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p><label for="idlist">Qual estádo você é?</label>
+                <input type="text" name="namelist" id="idlist" list="list">
+                <datalist id="list">
+                    <option value="0">Auxiliar de produção de bolsas</option>
+                    <option value="1">Programador</option>
+                    <option value="2">Psicólogo</option>
+                    <option value="3">Ator</option>
+                    <option value="4">Diretor</option>
+                    <option value="5">Roteirista</option>
+                </datalist> </p>
+                <p>
+                    <label for="idmens">Me fale sobre seu estado:</label>
+                    <textarea name="mens" id="idmens" cols="30" rows="10" placeholder="Deixe sua mensagem aqui"></textarea>
+                </p>
+            
+        </form>
+    </fieldset>
 </body>
 </html> 
