@@ -7,7 +7,48 @@
     <title>Meu Primeiro Formulário</title>
 </head>
 <body>
-    <h1>Meu Primeiro Formulário</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <h1>Meu Primeiro Formulário</h1>
+        <form action="cadastro.js" autocomplete="off" method="post">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome" required>
+            </p>
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="text" name="idade" id="iidade" required>
+            </p>
+            <p><input type="submit" value="Enviar" onclick="enviar()"></p>
+        </form>
+    </fieldset>
+
+    <h1>Login e Senha</h1>
+    <fieldset>
+        <legend>Login</legend>
+        <form action="cadastro.js" method="Post" autocomplete="off">
+            <p>
+                <label for="usu">Usuário:</label>
+                <input type="text" name="usu" id="usu" required minlength="5">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required minlength="4" maxlength="6"  placeholder="digite sua senha" >
+            </p>
+            <p> <input type="submit" value="Acessar">
+                <input type="reset" value="Limpar"></p>
+        </form>
+    </fieldset> <br>
     
+    <fieldset>
+        <legend>Tempo do cadastro</legend>
+        <form action="cadastro.js" autocomplete="off" method="post">
+            <p><label for="Numero"></label>
+            <input type="number" name="numero" id="Numero"></p>
+            <p><input type="month" name="data" id="data"></p>
+            <p><input type="date" name="data" id="data"></p>
+            <p><input type="time" name="hora" id="hora"></p>
+        </form>
+    </fieldset>
 </body>
-</html>
+</html> 
