@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Output</title>
+    
+</head>
+<body>
+    <fieldset>
+        <legend>Elemento Output</legend>
+        <form action="out.js" method="post" autocomplete="off">
+            <p>
+                <label for="in1">Numero 1</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Numero 2</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required
+                oninput="soma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p> <label for="soma">Total dos Valores:</label>
+                <output id="soma"></output>
+            </p>
+            <p>
+                <input type="range" name="barra" id="idbarra" min="0" max="100" value="0" oninput="valor.innerHTML = Number(idbarra.value)">
+                <output id="valor">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+            </p>
+        </form>
+        <fieldset>
+            <legend>Sua Idade</legend>
+            <form>
+                <label for="idano">Ano em que vc nasceu</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022" required oninput="calcular()">
+                <label for="outano">Neste ano, você fará:</label><output id="outano"></output>
+            </form>
+        </fieldset>
+    </fieldset>
+</body>
+<script>
+    let ano = new Date().getFullYear()
+    function calcular() {
+        outano.innerHTML = Number(ano) - Number(iano.value)
+    }
+</script>
+</html>
